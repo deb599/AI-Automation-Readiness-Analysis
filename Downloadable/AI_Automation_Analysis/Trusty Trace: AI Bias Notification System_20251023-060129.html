@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Automation Assessment</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f1f5f9; padding: 40px; color: #1e293b; }
+  .container { max-width: 1200px; margin: auto; background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .header { background: #2563eb; color: white; padding: 20px; text-align: center; border-radius: 12px; }
+  .verdict { background: #f59e0b; color: white; padding: 20px; text-align: center; border-radius: 12px; margin: 20px 0; font-weight: bold; font-size: 24px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #e2e8f0; padding: 8px 12px; text-align: center; vertical-align: top; }
+  th { background: #f1f5f9; }
+  .explanation { text-align: left; }
+  details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; padding: 10px; }
+  summary { font-weight: bold; cursor: pointer; }
+  .subscore { margin-left: 15px; margin-bottom: 5px; }
+  .mvpGoal { font-style: italic; margin-bottom: 10px; color: white; font-weight: bold; }
+  .footer { text-align: center; font-size: 13px; color: #93c5fd; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AI Automation Assessment</h1>
+    <p>3 Epics | Total Score: 56/90 (62.2%)</p>
+    <div class="mvpGoal">MVP Goal: Develop a notification system that alerts users of potential AI bias in decision-making processes.</div>
+  </div>
+
+  <div class="verdict">Wait - 62.2%</div>
+
+  <details open>
+    <summary>Go/Wait/No-Go Scoring Explanation</summary>
+    <p class="explanation">
+      <strong>Go (≥67%):</strong> High potential for AI automation, strong business value, and manageable technical feasibility and risk.<br>
+      <strong>Wait (33–66%):</strong> Moderate potential, requires further evaluation or risk mitigation.<br>
+      <strong>No-Go (<33%):</strong> Low potential, significant barriers or risks outweigh benefits.<br><br>
+      <em>Current Score: 56/90 = 62.2%</em>
+    </p>
+  </details>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Epic Title</th>
+        <th>Total Score</th>
+        <th>Classification</th>
+        <th>Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>Bias Detection Mechanism</td>
+          <td>21/30 (70.0%)</td>
+          <td>High Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Detailed Scores</summary>
+              <div class="subscore"><strong>Technical Feasibility:</strong> 6</div>
+              <div class="subscore">Data Requirements: 5 - Requires diverse datasets to identify bias but access might be limited.</div>
+              <div class="subscore">Decision Complexity: 7 - Decision-making processes often involve subjective interpretations, complicating bias detection.</div>
+              <div class="subscore">Integration: 6 - Integration with existing systems is feasible but may require significant adaptation.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 7 - High volume of automated decision-making processes can benefit from bias detection.</div>
+              <div class="subscore">Pattern Recognition: 8 - Opportunities to identify hidden biases in large datasets exist.</div>
+              <div class="subscore">Scalability: 9 - System can scale across various decision-making frameworks and industries.</div>
+              <div class="subscore">Error Tolerance: 6 - Bias detection needs stringent oversight as errors could lead to serious repercussions.</div>
+
+              <div class="subscore"><strong>Risk & Compliance:</strong> 7</div>
+              <div class="subscore">Bias Risk: 8 - Potential for significant bias exists if the model is not rigorously trained.</div>
+              <div class="subscore">Regulatory: 7 - Must comply with regulations on fairness and data protection.</div>
+              <div class="subscore">Explainability: 8 - High need for transparency to ensure trust in the bias detection process.</div>
+
+              <div class="subscore"><strong>Interpretation:</strong> </div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>User Notification System</td>
+          <td>19/30 (63.3%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Detailed Scores</summary>
+              <div class="subscore"><strong>Technical Feasibility:</strong> 4</div>
+              <div class="subscore">Data Requirements: 5 - Requires diverse datasets to accurately identify potential biases.</div>
+              <div class="subscore">Decision Complexity: 4 - Decisions regarding AI bias are moderately complex due to the subjective nature of bias interpretation.</div>
+              <div class="subscore">Integration: 3 - Integration with existing decision-making systems may require significant adjustments.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 7 - The potential to address frequent bias assessments in various decision-making contexts.</div>
+              <div class="subscore">Pattern Recognition: 6 - Opportunity to identify and address recurring bias patterns over time.</div>
+              <div class="subscore">Scalability: 8 - High scalability potential as the system can be expanded to various applications and sectors.</div>
+              <div class="subscore">Error Tolerance: 5 - Acceptable error margin is low, necessitating careful oversight.</div>
+
+              <div class="subscore"><strong>Risk & Compliance:</strong> 7</div>
+              <div class="subscore">Bias Risk: 6 - Potential bias in data can lead to incorrect notifications or exacerbation of existing bias.</div>
+              <div class="subscore">Regulatory: 8 - Strong regulatory scrutiny around bias in AI necessitates careful management.</div>
+              <div class="subscore">Explainability: 7 - High demand for transparency and interpretability in AI bias detection mechanisms.</div>
+
+              <div class="subscore"><strong>Interpretation:</strong> </div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>User Feedback Loop</td>
+          <td>16/30 (53.3%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Detailed Scores</summary>
+              <div class="subscore"><strong>Technical Feasibility:</strong> 4</div>
+              <div class="subscore">Data Requirements: 5 - Requires comprehensive data on decision-making processes but may have gaps in user feedback.</div>
+              <div class="subscore">Decision Complexity: 3 - Decision-making can be complex, depending on context and subjective factors.</div>
+              <div class="subscore">Integration: 6 - Integration with existing systems is feasible but may require middleware.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 7</div>
+              <div class="subscore">Repetition / Volume: 8 - High potential for repeated monitoring of AI bias across various applications.</div>
+              <div class="subscore">Pattern Recognition: 7 - Opportunities exist for identifying bias patterns and improving system decision-making.</div>
+              <div class="subscore">Scalability: 6 - Can scale across multiple systems, although initial implementation may be limited.</div>
+              <div class="subscore">Error Tolerance: 4 - Requires low tolerance for bias; decisions can significantly impact user trust.</div>
+
+              <div class="subscore"><strong>Risk & Compliance:</strong> 5</div>
+              <div class="subscore">Bias Risk: 7 - Potential for data or model bias needs careful monitoring.</div>
+              <div class="subscore">Regulatory: 5 - Some regulatory implications related to transparency and accountability exist.</div>
+              <div class="subscore">Explainability: 6 - Needs to provide clear explanations for flagged biases to maintain user trust.</div>
+
+              <div class="subscore"><strong>Interpretation:</strong> </div>
+            </details>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">Generated 10/22/2025, 7:02:21 PM</div>
+</div>
+</body>
+</html>
