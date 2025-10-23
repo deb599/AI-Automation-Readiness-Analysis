@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Automation Assessment</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f1f5f9; padding: 40px; color: #1e293b; }
+  .container { max-width: 1200px; margin: auto; background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .header { background: #2563eb; color: white; padding: 20px; text-align: center; border-radius: 12px; }
+  .verdict { background: #f59e0b; color: white; padding: 20px; text-align: center; border-radius: 12px; margin: 20px 0; font-weight: bold; font-size: 24px; }
+  .mvpGoal { font-style: italic; margin-bottom: 10px; color: white; font-weight: bold; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #e2e8f0; padding: 8px 12px; text-align: center; vertical-align: top; }
+  th { background: #f1f5f9; }
+  .explanation { text-align: left; }
+  details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; padding: 10px; }
+  summary { font-weight: bold; cursor: pointer; }
+  .subscore { margin-left: 15px; margin-bottom: 5px; }
+  .small-note { font-size: 12px; font-style: italic; color: #64748b; margin-top: 5px; }
+  .footer { text-align: center; font-size: 13px; color: #93c5fd; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AI Automation Assessment</h1>
+    <p>3 Epics | Total: 58/90 (64.4%)</p>
+    <div class="mvpGoal">MVP Goal: Create an interactive platform for artists to collaboratively engage with AI tools in workshops, enhancing their artistic expression and technological skills.</div>
+  </div>
+
+  <div class="verdict">Wait – 64.4%</div>
+
+  <details open>
+    <summary>Score Interpretation</summary>
+    <p class="explanation">
+      <strong>Go (≥67%):</strong> High potential for AI automation.<br>
+      <strong>Wait (33–66%):</strong> Moderate potential – needs more analysis or risk control.<br>
+      <strong>No-Go (<33%):</strong> Low potential – significant technical or compliance barriers.<br><br>
+      Risk scores are inverted (higher risk = lower potential).<br>
+      <em>Current Score: 58/90 = 64.4%</em>
+    </p>
+  </details>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Epic</th>
+        <th>Total Score</th>
+        <th>Classification</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>Workshop Curriculum Development</td>
+          <td>20/30 (66.7%)</td>
+          <td>High Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 7</div>
+              <div class="subscore">Data Requirements: 6 – While diverse datasets of existing art styles and techniques are available, gaps in practical data regarding user interactions with AI tools could limit effectiveness.</div>
+              <div class="subscore">Decision Complexity: 5 – The decision-making process in an artistic context is inherently subjective, combining both automated and human oversight, which increases complexity but allows for individualized creativity.</div>
+              <div class="subscore">Integration: 8 – Integrating AI tools into educational platforms appears feasible, as many institutions are increasingly incorporating tech into their curricula, though legacy systems could pose some challenges.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 4 – Workshops can regularly engage users multiple times, but the uniqueness of artistic processes limits volume compared to traditional business automation tasks.</div>
+              <div class="subscore">Pattern Recognition: 7 – The workshops can leverage AI to identify emerging artistic trends and provide actionable insights, highly valuable for artists seeking market relevance.</div>
+              <div class="subscore">Scalability: 6 – While the platform can be scaled, ensuring a high-quality experience across diverse artistic disciplines and participant skill levels poses challenges.</div>
+              <div class="subscore">Error Tolerance: 5 – Given the creative nature of this epic, errors may lead to misinterpretations of artistic intent; however, the non-critical nature of art allows a moderate tolerance for mistakes.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 5 (original: 5)</div>
+              <div class="subscore">Bias Risk: 6 – There is potential for bias in AI-generated art if training data lacks diversity, highlighting a need for ongoing review and updates to the datasets used.</div>
+              <div class="subscore">Regulatory: 4 – The workshops may be affected by regulations regarding copyright and AI-generated content, necessitating caution in how AI tools are applied.</div>
+              <div class="subscore">Explainability: 5 – While artists and educators may require some level of explainability around AI tool functionalities, the subjective nature of art allows for a more flexible approach to transparency.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>Platform for Collaborative Engagement</td>
+          <td>19/30 (63.3%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 6</div>
+              <div class="subscore">Data Requirements: 7 – The platform requires access to user-generated artistic data and AI tool outputs for effective workshops. While this data is available, curating and ensuring quality may pose challenges.</div>
+              <div class="subscore">Decision Complexity: 5 – Decision-making is moderately structured as it involves both artistic choices and AI recommendations, leading to a moderate level of complexity in automation.</div>
+              <div class="subscore">Integration: 6 – Integrating various AI tools and ensuring smooth communication between user interfaces may present some technical friction, but APIs are typically available for popular AI platforms.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 5 – Workshops can be applied repeatedly across various artistic disciplines and demographics, although each session would require customization for different participants' needs.</div>
+              <div class="subscore">Pattern Recognition: 7 – The project has potential for detecting trends in user preferences and art styles, which can enhance user engagement, but it may require significant data aggregation efforts.</div>
+              <div class="subscore">Scalability: 8 – The collaborative platform can expand to accommodate different groups and geographies as interest in AI art education grows, although local partnerships will be necessary.</div>
+              <div class="subscore">Error Tolerance: 4 – Errors in artistic recommendations could lead to dissatisfaction among artists, but the arts community is generally tolerant of experimental outcomes, which eases some concerns.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 5 (original: 5)</div>
+              <div class="subscore">Bias Risk: 4 – There is a risk of AI bias in the training data affecting the artistic outputs, particularly if data sources are not diversified, but by engaging with a broader community, biases may be mitigated.</div>
+              <div class="subscore">Regulatory: 6 – While the regulatory landscape for AI and copyright is evolving, existing laws may impact the use of artists' works in training AI models, requiring careful navigation.</div>
+              <div class="subscore">Explainability: 5 – Explaining AI's creative suggestions will be important for user trust, and while some transparency can be provided, the inherently subjective nature of art complicates full explainability.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>Partnership and Outreach Strategy</td>
+          <td>19/30 (63.3%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 7</div>
+              <div class="subscore">Data Requirements: 6 – Access to diverse datasets of artistic works and AI outputs is necessary for training and demonstrating AI tools, but there may be gaps in such datasets, particularly from niche art forms.</div>
+              <div class="subscore">Decision Complexity: 5 – While decisions regarding workshop content and AI tool integration can be structured, creative processes are inherently subjective, posing challenges for automation in selection and feedback.</div>
+              <div class="subscore">Integration: 7 – Integrating AI tools with existing creative platforms can be facilitated by APIs, although legacy systems may present friction points that need careful management.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 6 – The workshops can automate aspects of feedback and artist interactions, but the creative process remains significantly unique and less repetitive, limiting full automation potential.</div>
+              <div class="subscore">Pattern Recognition: 7 – The ability to analyze artistic trends and artist performance can create substantial value, but it relies heavily on available data and effective AI pattern recognition capabilities.</div>
+              <div class="subscore">Scalability: 9 – The platform has high scalability potential across geographic and demographic lines, supported by online workshops, though it would require effective marketing strategies to reach varied audiences.</div>
+              <div class="subscore">Error Tolerance: 5 – Errors in AI-generated outputs may not be critical but could affect artists' reputations. Thus, a moderate level of error tolerance is necessary when integrating AI into creative processes.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 4 (original: 6)</div>
+              <div class="subscore">Bias Risk: 7 – There is a legitimate concern for bias in AI outputs, which might reflect historical inequalities in art representation. Mitigation strategies can be developed but require ongoing vigilance.</div>
+              <div class="subscore">Regulatory: 5 – Compliance with regulations like GDPR is essential since personal data may be involved in user profiles, but the primary focus on artistic expression limits regulatory constraints significantly.</div>
+              <div class="subscore">Explainability: 6 – Artists and participants need a reasonable level of understanding of how AI tools work to effectively use them, though technical depth may vary in importance across different artist levels.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">Generated 10/23/2025, 3:58:08 AM</div>
+</div>
+</body>
+</html>
