@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Automation Assessment</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f1f5f9; padding: 40px; color: #1e293b; }
+  .container { max-width: 1200px; margin: auto; background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .header { background: #2563eb; color: white; padding: 20px; text-align: center; border-radius: 12px; }
+  .verdict { background: #f59e0b; color: white; padding: 20px; text-align: center; border-radius: 12px; margin: 20px 0; font-weight: bold; font-size: 24px; }
+  .mvpGoal { font-style: italic; margin-bottom: 10px; color: white; font-weight: bold; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #e2e8f0; padding: 8px 12px; text-align: center; vertical-align: top; }
+  th { background: #f1f5f9; }
+  .explanation { text-align: left; }
+  details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; padding: 10px; }
+  summary { font-weight: bold; cursor: pointer; }
+  .subscore { margin-left: 15px; margin-bottom: 5px; }
+  .small-note { font-size: 12px; font-style: italic; color: #64748b; margin-top: 5px; }
+  .footer { text-align: center; font-size: 13px; color: #93c5fd; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AI Automation Assessment</h1>
+    <p>3 Epics | Total: 50/90 (55.6%)</p>
+    <div class="mvpGoal">MVP Goal: To develop a platform that identifies and mitigates AI bias while restoring user trust through engagement and transparency.</div>
+  </div>
+
+  <div class="verdict">Wait – 55.6%</div>
+
+  <details open>
+    <summary>Score Interpretation</summary>
+    <p class="explanation">
+      <strong>Go (≥67%):</strong> High potential for AI automation.<br>
+      <strong>Wait (33–66%):</strong> Moderate potential – needs more analysis or risk control.<br>
+      <strong>No-Go (<33%):</strong> Low potential – significant technical or compliance barriers.<br><br>
+      Risk scores are inverted (higher risk = lower potential).<br>
+      <em>Current Score: 50/90 = 55.6%</em>
+    </p>
+  </details>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Epic</th>
+        <th>Total Score</th>
+        <th>Classification</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>Bias Detection and Monitoring</td>
+          <td>16/30 (53.3%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 4</div>
+              <div class="subscore">Data Requirements: 5 – Data quality for bias detection relies on comprehensive datasets from diverse demographics. While there is a wealth of data, the challenge lies in ensuring data representation and accuracy.</div>
+              <div class="subscore">Decision Complexity: 4 – The complexity of automated decisions increases with the need for nuanced understanding of bias. While some decisions can be automated, subjective assessments of trust restoration require human involvement.</div>
+              <div class="subscore">Integration: 3 – Integrating bias detection capabilities into existing systems is challenging, given that many legacy systems may not support advanced analytics needed for effective bias monitoring.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 6 – While the tasks of monitoring and reporting can be automated, the variability in bias detection and correction tasks involves continuous human oversight, limiting full automation.</div>
+              <div class="subscore">Pattern Recognition: 9 – The platform could uncover significant patterns in AI outputs that denote bias, providing actionable insights that enhance user trust—a high-value proposition in today’s market.</div>
+              <div class="subscore">Scalability: 7 – The platform can scale across various applications and sectors, although the regulatory nuances in implementing it across different geographies could pose challenges.</div>
+              <div class="subscore">Error Tolerance: 5 – Errors in bias detection can lead to significant reputational damage and regulatory repercussions, necessitating a balance between automation and oversight.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 4 (original: 6)</div>
+              <div class="subscore">Bias Risk: 7 – The potential for biases stemming from underrepresented groups is high; mitigating these biases is complex and requires ongoing effort as societal norms evolve.</div>
+              <div class="subscore">Regulatory: 5 – Regulatory frameworks, such as GDPR and emerging AI fairness laws, can add complexities to the development timeline and necessitate stringent compliance measures.</div>
+              <div class="subscore">Explainability: 8 – Stakeholders require a clear understanding of how biases are detected and addressed, increasing the need for transparent models; high explainability can lead to greater public trust.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>Corrective Action Implementation</td>
+          <td>17/30 (56.7%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 6</div>
+              <div class="subscore">Data Requirements: 7 – The platform requires high-quality, diverse datasets to accurately identify and mitigate bias. While many organizations have access to large datasets, ensuring their completeness and representativeness poses a significant challenge.</div>
+              <div class="subscore">Decision Complexity: 5 – Decision complexity varies, as both objective data-driven decisions and subjective assessments of bias must be made. Automating these processes is complicated due to the need for human oversight in interpreting subtle biases.</div>
+              <div class="subscore">Integration: 4 – Integrating with existing systems may present challenges due to legacy software environments and varying data formats. However, with careful planning, these integrations can be managed to some extent.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 6 – The platform can automate monitoring tasks at scale, potentially addressing a high volume of interactions and outputs. However, certain subjective assessments will still require manual intervention.</div>
+              <div class="subscore">Pattern Recognition: 9 – The ability to detect patterns in AI output and user feedback is critical, providing significant business insights and enhancing user trust. Real-world applications show substantial benefits from effective bias mitigation.</div>
+              <div class="subscore">Scalability: 7 – Once established, the process can be scaled across various departments and user interactions, although specific customization for different use cases may limit immediate scalability.</div>
+              <div class="subscore">Error Tolerance: 3 – The consequences of error in bias detection can be severe, impacting compliance and user trust. The platform will need robust error-handling measures to mitigate such risks successfully.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 3 (original: 7)</div>
+              <div class="subscore">Bias Risk: 8 – The risks tied to bias in AI outputs are significant, particularly regarding underrepresented groups. This necessitates ongoing monitoring and adjustment strategies to minimize exposure to legal and reputational risks.</div>
+              <div class="subscore">Regulatory: 6 – Regulatory frameworks like GDPR or pending AI fairness laws add layers of compliance complexity, impacting implementation timelines and requiring continuous legal assessments.</div>
+              <div class="subscore">Explainability: 5 – Explainability is crucial for stakeholders who need a clear understanding of how biases are identified and addressed. This necessitates a balance between AI complexity and the need for interpretable outputs to satisfy regulatory and user expectations.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>User Engagement and Transparency Reporting</td>
+          <td>17/30 (56.7%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 6</div>
+              <div class="subscore">Data Requirements: 5 – Moderate availability of structured data from existing AI outputs, but significant gaps in historical bias data may limit effectiveness.</div>
+              <div class="subscore">Decision Complexity: 7 – High decision complexity due to the need to interpret bias metrics and implement corrective actions, but certain aspects can be automated.</div>
+              <div class="subscore">Integration: 6 – Integration with existing AI models and user interfaces presents challenges due to varying system capabilities and data schemas.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 4 – While monitoring AI outputs can be repetitive, variance in user engagement and bias metrics complicates standardization.</div>
+              <div class="subscore">Pattern Recognition: 9 – High potential for insights through data analysis of biases across demographics, offering substantial value in terms of enhancing user trust.</div>
+              <div class="subscore">Scalability: 7 – The platform can be scaled across different business units; however, bespoke adaptations for various AI outputs will be necessary.</div>
+              <div class="subscore">Error Tolerance: 3 – High sensitivity to errors, particularly in bias assessment, can lead to compliance issues and damage brand reputation if not managed carefully.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 3 (original: 7)</div>
+              <div class="subscore">Bias Risk: 8 – Significant risk of perpetuating biases if not adequately monitored, especially concerning underrepresented groups; mitigation measures must be robust.</div>
+              <div class="subscore">Regulatory: 6 – Regulatory frameworks like GDPR and emerging AI fairness regulations require rigorous compliance, affecting platform development timelines.</div>
+              <div class="subscore">Explainability: 5 – Explainability is critical for users and regulators but may vary in complexity based on the algorithms used for bias detection and correction.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">Generated 10/23/2025, 3:58:58 AM</div>
+</div>
+</body>
+</html>
