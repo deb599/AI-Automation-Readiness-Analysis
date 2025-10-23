@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Automation Assessment</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f1f5f9; padding: 40px; color: #1e293b; }
+  .container { max-width: 1200px; margin: auto; background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .header { background: #2563eb; color: white; padding: 20px; text-align: center; border-radius: 12px; }
+  .verdict { background: #f59e0b; color: white; padding: 20px; text-align: center; border-radius: 12px; margin: 20px 0; font-weight: bold; font-size: 24px; }
+  .mvpGoal { font-style: italic; margin-bottom: 10px; color: white; font-weight: bold; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #e2e8f0; padding: 8px 12px; text-align: center; vertical-align: top; }
+  th { background: #f1f5f9; }
+  .explanation { text-align: left; }
+  details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; padding: 10px; }
+  summary { font-weight: bold; cursor: pointer; }
+  .subscore { margin-left: 15px; margin-bottom: 5px; }
+  .small-note { font-size: 12px; font-style: italic; color: #64748b; margin-top: 5px; }
+  .footer { text-align: center; font-size: 13px; color: #93c5fd; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AI Automation Assessment</h1>
+    <p>3 Epics | Total: 48/90 (53.3%)</p>
+    <div class="mvpGoal">MVP Goal: Create an interactive dashboard that provides users with transparency into AI decision-making processes to enhance trust and understanding.</div>
+  </div>
+
+  <div class="verdict">Wait – 53.3%</div>
+
+  <details open>
+    <summary>Score Interpretation</summary>
+    <p class="explanation">
+      <strong>Go (≥67%):</strong> High potential for AI automation.<br>
+      <strong>Wait (33–66%):</strong> Moderate potential – needs more analysis or risk control.<br>
+      <strong>No-Go (<33%):</strong> Low potential – significant technical or compliance barriers.<br><br>
+      Risk scores are inverted (higher risk = lower potential).<br>
+      <em>Current Score: 48/90 = 53.3%</em>
+    </p>
+  </details>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Epic</th>
+        <th>Total Score</th>
+        <th>Classification</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>Data Source Transparency</td>
+          <td>16/30 (53.3%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 3</div>
+              <div class="subscore">Data Requirements: 4 – Data may be available but lacks standardization, affecting model reliability.</div>
+              <div class="subscore">Decision Complexity: 2 – Decisions are often based on complex algorithms, making transparency challenging.</div>
+              <div class="subscore">Integration: 2 – Existing systems may require custom APIs for integration, adding complexity.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 7 – High demand for transparent decision-making increases value across multiple departments.</div>
+              <div class="subscore">Pattern Recognition: 6 – The dashboard can uncover trends that enhance understanding of AI outcomes, though limited by data quality.</div>
+              <div class="subscore">Scalability: 8 – This initiative could easily be scaled across various applications with tailored data presentation.</div>
+              <div class="subscore">Error Tolerance: 5 – Errors can undermine trust, but the dashboard's interactive nature provides opportunities for user feedback.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 5 (original: 5)</div>
+              <div class="subscore">Bias Risk: 6 – Existing data may reflect societal biases, leading to fairness concerns when models are applied.</div>
+              <div class="subscore">Regulatory: 5 – Compliance with data handling regulations like GDPR is required but can be managed with proper protocols.</div>
+              <div class="subscore">Explainability: 6 – Auditors and users demand interpretability, necessitating balanced model complexity and explainability.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>Data Integrity Visualization</td>
+          <td>17/30 (56.7%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 6</div>
+              <div class="subscore">Data Requirements: 5 – The project relies on existing datasets, but data quality issues such as missing values may hinder model accuracy.</div>
+              <div class="subscore">Decision Complexity: 7 – Decisions are largely structured, allowing for some automation but may still require human oversight for complex cases.</div>
+              <div class="subscore">Integration: 6 – Integration with current analytics platforms is feasible but may require significant customization to connect disparate data sources.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 7 – High-frequency reporting tasks present substantial opportunities for automation, enhancing efficiency in data monitoring.</div>
+              <div class="subscore">Pattern Recognition: 8 – The potential for identifying data anomalies and trends through visualization provides considerable actionable insights.</div>
+              <div class="subscore">Scalability: 9 – The dashboard can be scaled across multiple departments with minimal configuration, promoting organizational-wide transparency.</div>
+              <div class="subscore">Error Tolerance: 5 – Moderate tolerance for error exists; inaccuracies in visuals could mislead users but serve as long-term learning opportunities.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 3 (original: 7)</div>
+              <div class="subscore">Bias Risk: 6 – There is a potential for bias if the data used for visualization lacks diversity, which could affect fairness in decision-making confidence.</div>
+              <div class="subscore">Regulatory: 8 – Strong compliance frameworks such as GDPR must be adhered to, particularly regarding data use and user privacy.</div>
+              <div class="subscore">Explainability: 7 – The need for transparency will drive focus on explainable AI mechanisms, ensuring that the decision processes can be interrogated by users.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>Monetization Influences Clarity</td>
+          <td>15/30 (50.0%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 4</div>
+              <div class="subscore">Data Requirements: 4 – Data on user interactions and decision processes is available but may suffer from inconsistencies and gaps that impair comprehensive analysis.</div>
+              <div class="subscore">Decision Complexity: 5 – The decisions involved are semi-structured, allowing for some level of automation but still requiring human oversight for nuanced cases.</div>
+              <div class="subscore">Integration: 3 – Integration with existing systems is feasible but challenging, as it necessitates alignment with multiple data sources and potential legacy systems.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 7</div>
+              <div class="subscore">Repetition / Volume: 6 – The need for reporting and transparency in AI decisions occurs frequently, providing a strong foundation for continuous improvement and iterative feedback.</div>
+              <div class="subscore">Pattern Recognition: 8 – There is significant potential for deriving insights from user behavior datasets, which can inform better AI models and decision frameworks.</div>
+              <div class="subscore">Scalability: 7 – The dashboard can be adapted to various departments, promoting a standardized approach to monitoring AI decision processes across the organization.</div>
+              <div class="subscore">Error Tolerance: 5 – Moderate error tolerance exists; users must understand AI limitations, but critical business decisions still require cautious application of insights.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 4 (original: 6)</div>
+              <div class="subscore">Bias Risk: 6 – There is a moderate risk of bias if the training data does not adequately represent all user demographics, potentially leading to trust issues.</div>
+              <div class="subscore">Regulatory: 5 – Regulations like GDPR must be considered, particularly in data handling and user consent, which can limit the scope of the dashboard's features.</div>
+              <div class="subscore">Explainability: 7 – High explainability requirements are essential as stakeholders need to understand the logic behind AI decisions, guiding the choice of algorithms accordingly.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">Generated 10/23/2025, 2:48:18 AM</div>
+</div>
+</body>
+</html>
