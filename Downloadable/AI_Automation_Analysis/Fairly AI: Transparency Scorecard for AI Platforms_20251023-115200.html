@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Automation Assessment</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f1f5f9; padding: 40px; color: #1e293b; }
+  .container { max-width: 1200px; margin: auto; background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .header { background: #2563eb; color: white; padding: 20px; text-align: center; border-radius: 12px; }
+  .verdict { background: #f59e0b; color: white; padding: 20px; text-align: center; border-radius: 12px; margin: 20px 0; font-weight: bold; font-size: 24px; }
+  .mvpGoal { font-style: italic; margin-bottom: 10px; color: white; font-weight: bold; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #e2e8f0; padding: 8px 12px; text-align: center; vertical-align: top; }
+  th { background: #f1f5f9; }
+  .explanation { text-align: left; }
+  details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; padding: 10px; }
+  summary { font-weight: bold; cursor: pointer; }
+  .subscore { margin-left: 15px; margin-bottom: 5px; }
+  .small-note { font-size: 12px; font-style: italic; color: #64748b; margin-top: 5px; }
+  .footer { text-align: center; font-size: 13px; color: #93c5fd; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AI Automation Assessment</h1>
+    <p>3 Epics | Total: 43/90 (47.8%)</p>
+    <div class="mvpGoal">MVP Goal: Develop a Transparency Scorecard for AI platforms to assess and communicate their fairness and ethical performance.</div>
+  </div>
+
+  <div class="verdict">Wait – 47.8%</div>
+
+  <details open>
+    <summary>Score Interpretation</summary>
+    <p class="explanation">
+      <strong>Go (≥67%):</strong> High potential for AI automation.<br>
+      <strong>Wait (33–66%):</strong> Moderate potential – needs more analysis or risk control.<br>
+      <strong>No-Go (<33%):</strong> Low potential – significant technical or compliance barriers.<br><br>
+      Risk scores are inverted (higher risk = lower potential).<br>
+      <em>Current Score: 43/90 = 47.8%</em>
+    </p>
+  </details>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Epic</th>
+        <th>Total Score</th>
+        <th>Classification</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>Data Collection and Integration</td>
+          <td>15/30 (50.0%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 4</div>
+              <div class="subscore">Data Requirements: 4 – Data types are primarily structured but may suffer from inconsistencies and incomplete records which can hinder training effectiveness.</div>
+              <div class="subscore">Decision Complexity: 5 – The integration of both subjective and objective assessments introduces moderate complexity in decision-making, affecting automation prospects.</div>
+              <div class="subscore">Integration: 3 – Integration efforts can be complicated by the need to align diverse data sources, including legacy systems, which poses a significant challenge.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 7</div>
+              <div class="subscore">Repetition / Volume: 6 – The transparency scorecard evaluation can be applied to multiple AI models, indicating a decent volume of repetitive tasks that drive automation potential.</div>
+              <div class="subscore">Pattern Recognition: 8 – Identifying fairness-related patterns in data can uncover critical insights, thus providing high predictive value for bias mitigation.</div>
+              <div class="subscore">Scalability: 7 – The process can be leveraged across various AI applications, enhancing the transparency scorecard's scalability with some minor adjustments.</div>
+              <div class="subscore">Error Tolerance: 5 – Moderate error tolerance exists as misinterpretations can drive compliance issues, but the overall impact can still be manageable with oversight.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 4 (original: 6)</div>
+              <div class="subscore">Bias Risk: 7 – There is significant risk of bias if training data fails to adequately represent diverse demographics, highlighting the need for careful data curation.</div>
+              <div class="subscore">Regulatory: 5 – Regulations such as GDPR impose constraints on data usage that could complicate model training and scoring activities.</div>
+              <div class="subscore">Explainability: 6 – High demands for explainability in AI systems necessitate that the scorecard’s methodologies are interpretable, which may limit the use of advanced models.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>Scorecard Design and Development</td>
+          <td>13/30 (43.3%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 4</div>
+              <div class="subscore">Data Requirements: 5 – Data quality is inconsistent across AI platforms, with varying definitions of fairness metrics affecting model accuracy.</div>
+              <div class="subscore">Decision Complexity: 4 – The decisions for scorecard criteria involve a combination of subjective judgments and objective metrics, limiting full automation potential.</div>
+              <div class="subscore">Integration: 3 – Integration with various AI systems may face challenges due to disparate technologies and lack of standardization, increasing complexity.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 6</div>
+              <div class="subscore">Repetition / Volume: 4 – While the development can enable periodic assessments, the scorecard’s application is more episodic than routine, limiting automation.</div>
+              <div class="subscore">Pattern Recognition: 6 – The scorecard can identify trends over time, providing valuable insights into fairness, though data variability may affect predictability.</div>
+              <div class="subscore">Scalability: 5 – The scorecard can be adapted to different AI systems, but customization effort could increase depending on specific fairness measures.</div>
+              <div class="subscore">Error Tolerance: 4 – High stakes in ethical assessments demand low error tolerance, which may hinder autonomous and scalable AI implementations.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 3 (original: 7)</div>
+              <div class="subscore">Bias Risk: 8 – The potential for bias is substantial due to the historical data used for model training, necessitating thorough evaluations to ensure fairness.</div>
+              <div class="subscore">Regulatory: 6 – Potential regulations such as GDPR will impose constraints on data usage and model transparency, affecting deployment timelines.</div>
+              <div class="subscore">Explainability: 7 – There is a strong need for explainability in ethical assessments, which drives the requirement for interpretable models over complex algorithms.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>User Access and Feedback Mechanism</td>
+          <td>15/30 (50.0%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 4</div>
+              <div class="subscore">Data Requirements: 3 – Access to relevant user access data is often limited and lacks comprehensive historical records, which hampers the quality of insights produced.</div>
+              <div class="subscore">Decision Complexity: 5 – Decisions on fairness and ethical performance can be partly structured but also involve subjective assessments that create some challenges for automation.</div>
+              <div class="subscore">Integration: 6 – Integration with existing user management systems is feasible but may require overcoming moderate technical challenges.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 7</div>
+              <div class="subscore">Repetition / Volume: 5 – User data analysis is performed frequently, and while not high volume, it is conducted regularly enough to provide valuable insights.</div>
+              <div class="subscore">Pattern Recognition: 8 – There is significant potential to detect patterns related to user access disparities which can inform adjustments to AI models for fairness.</div>
+              <div class="subscore">Scalability: 7 – The scorecard could be adapted for different departments, allowing for replication with moderate adjustments needed.</div>
+              <div class="subscore">Error Tolerance: 4 – Errors in ethical assessments can have serious implications, particularly in regulated industries, thus requiring careful management.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 4 (original: 6)</div>
+              <div class="subscore">Bias Risk: 7 – There is a substantial risk of bias if the underlying data does not adequately represent diverse user demographics, presenting fairness issues.</div>
+              <div class="subscore">Regulatory: 5 – Regulations such as GDPR necessitate careful handling of user data, limiting the extent of data usage for training models.</div>
+              <div class="subscore">Explainability: 6 – The need for clear and transparent explanations of decisions makes it essential to utilize interpretable models, which limits complex AI solutions.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">Generated 10/23/2025, 12:52:47 AM</div>
+</div>
+</body>
+</html>
