@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Automation Assessment</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f1f5f9; padding: 40px; color: #1e293b; }
+  .container { max-width: 1200px; margin: auto; background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .header { background: #2563eb; color: white; padding: 20px; text-align: center; border-radius: 12px; }
+  .verdict { background: #f59e0b; color: white; padding: 20px; text-align: center; border-radius: 12px; margin: 20px 0; font-weight: bold; font-size: 24px; }
+  .mvpGoal { font-style: italic; margin-bottom: 10px; color: white; font-weight: bold; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #e2e8f0; padding: 8px 12px; text-align: center; vertical-align: top; }
+  th { background: #f1f5f9; }
+  .explanation { text-align: left; }
+  details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; padding: 10px; }
+  summary { font-weight: bold; cursor: pointer; }
+  .subscore { margin-left: 15px; margin-bottom: 5px; }
+  .small-note { font-size: 12px; font-style: italic; color: #64748b; margin-top: 5px; }
+  .footer { text-align: center; font-size: 13px; color: #93c5fd; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AI Automation Assessment</h1>
+    <p>3 Epics | Total: 60/90 (66.7%)</p>
+    <div class="mvpGoal">MVP Goal: To create a dynamic risk assessment tool that enhances robot safety by monitoring real-time environmental conditions and robot performance.</div>
+  </div>
+
+  <div class="verdict">Wait – 66.7%</div>
+
+  <details open>
+    <summary>Score Interpretation</summary>
+    <p class="explanation">
+      <strong>Go (≥67%):</strong> High potential for AI automation.<br>
+      <strong>Wait (33–66%):</strong> Moderate potential – needs more analysis or risk control.<br>
+      <strong>No-Go (<33%):</strong> Low potential – significant technical or compliance barriers.<br><br>
+      Risk scores are inverted (higher risk = lower potential).<br>
+      <em>Current Score: 60/90 = 66.7%</em>
+    </p>
+  </details>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Epic</th>
+        <th>Total Score</th>
+        <th>Classification</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>Real-Time Environmental Monitoring</td>
+          <td>20/30 (66.7%)</td>
+          <td>High Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 8</div>
+              <div class="subscore">Data Requirements: 7 – Access to real-time data is crucial; existing sensors can provide valuable input if properly configured. However, variability in data quality from different sources may impede reliability.</div>
+              <div class="subscore">Decision Complexity: 6 – The decision-making process can be somewhat structured due to clear parameters for safety. Still, subjective interpretations of unusual conditions may complicate automation.</div>
+              <div class="subscore">Integration: 9 – Integration with current monitoring systems should be straightforward given the existence of APIs and existing data streams in many operational environments.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 9</div>
+              <div class="subscore">Repetition / Volume: 8 – Milestone assessments can be automated, and the high volume of interactions in environments like manufacturing implies strong automation potential with consistent monitoring.</div>
+              <div class="subscore">Pattern Recognition: 9 – Potential for recognizing critical thresholds and environmental shifts is high, offering actionable insights that can directly improve safety outcomes.</div>
+              <div class="subscore">Scalability: 7 – Once deployed, the tool can be used across multiple robotics applications; however, customization for specific environments may slow uniform scaling.</div>
+              <div class="subscore">Error Tolerance: 6 – Errors in monitoring could lead to severe consequences in critical environments, necessitating a cautious approach to deployment with strong fail-safes.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 3 (original: 7)</div>
+              <div class="subscore">Bias Risk: 5 – Concerns around data dependencies can introduce biases if certain environmental factors are underrepresented, leading to unequal safety assessments.</div>
+              <div class="subscore">Regulatory: 6 – Compliance with regulations such as GDPR will be essential in managing data collected, particularly in sensitive environments like healthcare.</div>
+              <div class="subscore">Explainability: 6 – Stakeholders, especially in regulatory environments, will require clear interpretability of risk assessments, impacting model transparency and choice.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>Robot Performance Analytics</td>
+          <td>20/30 (66.7%)</td>
+          <td>High Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 8</div>
+              <div class="subscore">Data Requirements: 7 – This project requires access to real-time sensory data from robots and environmental variables, which are increasingly available through IoT devices and sensors, enhancing feasibility.</div>
+              <div class="subscore">Decision Complexity: 7 – The complexity is manageable as it involves structured decisions based on clear parameters and thresholds, allowing for easy automation of decision-making processes.</div>
+              <div class="subscore">Integration: 8 – Integration with existing robotic systems should be straightforward given that many modern robots already support real-time monitoring technologies, mitigating potential friction points.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 9</div>
+              <div class="subscore">Repetition / Volume: 8 – The tool will provide continuous monitoring which can address high-frequency safety checks, greatly automating operations that are currently manual.</div>
+              <div class="subscore">Pattern Recognition: 9 – It can leverage historical data to identify patterns in performance and environmental conditions, enabling proactive safety measures and operational efficiency enhancements.</div>
+              <div class="subscore">Scalability: 9 – This solution can easily scale across multiple robotic systems and environments, provided standardization of data formats and protocols is established.</div>
+              <div class="subscore">Error Tolerance: 6 – While errors can have high consequences in critical environments, the system is designed for early intervention, reducing potential harm but still requiring careful oversight.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 3 (original: 7)</div>
+              <div class="subscore">Bias Risk: 6 – Bias could stem from the data sources used for training algorithms; ensuring diverse and representative data will be essential to mitigate risks.</div>
+              <div class="subscore">Regulatory: 8 – There are regulatory implications in terms of robot operation safety, but compliance with industry standards can streamline the implementation process.</div>
+              <div class="subscore">Explainability: 7 – Explainability is crucial for building trust among users and regulators, necessitating transparency in how the system assesses risks associated with robot operation.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>Proactive Intervention Dashboard</td>
+          <td>20/30 (66.7%)</td>
+          <td>High Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 7</div>
+              <div class="subscore">Data Requirements: 8 – The tool requires real-time data from sensors and operational logs, which typically have high availability in modern robotics systems designed for environments like manufacturing. However, legacy systems may present challenges.</div>
+              <div class="subscore">Decision Complexity: 6 – While the decisions to intervene based on real-time data are mostly structured, varying environmental conditions can introduce subjective elements, particularly in edge cases.</div>
+              <div class="subscore">Integration: 5 – Integration with existing systems may require some effort depending on the architecture. Middleware solutions exist but might vary in compatibility with legacy systems.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 9</div>
+              <div class="subscore">Repetition / Volume: 7 – The monitoring tasks involved are repetitive and can be automated, particularly in high-volume production environments; however, adaptations for diverse operational contexts may be necessary.</div>
+              <div class="subscore">Pattern Recognition: 8 – The system can effectively identify patterns in performance and environmental conditions, allowing for actionable insights that can directly improve safety and efficiency.</div>
+              <div class="subscore">Scalability: 6 – The structure is scalable across departments, but variations in operation protocols could limit full standardization in implementation across different sites.</div>
+              <div class="subscore">Error Tolerance: 5 – Errors in intervention can have serious safety implications, which necessitates a robust risk management framework to handle potential failures in real-time operations.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 4 (original: 6)</div>
+              <div class="subscore">Bias Risk: 4 – Bias could arise from data inputs, particularly if certain environmental conditions are over-represented, but the risk is manageable with careful data curation.</div>
+              <div class="subscore">Regulatory: 5 – Compliance with safety regulations is critical, particularly in sectors like healthcare; ensuring that the tool adheres to these regulations may complicate the deployment timeline.</div>
+              <div class="subscore">Explainability: 7 – The need for explainability is moderate; stakeholders, especially safety regulators, will require clear justifications for intervention decisions made by the AI, influencing model design.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">Generated 10/23/2025, 5:47:50 AM</div>
+</div>
+</body>
+</html>
