@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Automation Assessment</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f1f5f9; padding: 40px; color: #1e293b; }
+  .container { max-width: 1200px; margin: auto; background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .header { background: #2563eb; color: white; padding: 20px; text-align: center; border-radius: 12px; }
+  .verdict { background: #f59e0b; color: white; padding: 20px; text-align: center; border-radius: 12px; margin: 20px 0; font-weight: bold; font-size: 24px; }
+  .mvpGoal { font-style: italic; margin-bottom: 10px; color: white; font-weight: bold; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #e2e8f0; padding: 8px 12px; text-align: center; vertical-align: top; }
+  th { background: #f1f5f9; }
+  .explanation { text-align: left; }
+  details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; padding: 10px; }
+  summary { font-weight: bold; cursor: pointer; }
+  .subscore { margin-left: 15px; margin-bottom: 5px; }
+  .small-note { font-size: 12px; font-style: italic; color: #64748b; margin-top: 5px; }
+  .footer { text-align: center; font-size: 13px; color: #93c5fd; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AI Automation Assessment</h1>
+    <p>3 Epics | Total: 54/90 (60.0%)</p>
+    <div class="mvpGoal">MVP Goal: Develop a consultancy framework that empowers businesses to achieve ethical AI compliance and fosters user trust.</div>
+  </div>
+
+  <div class="verdict">Wait – 60.0%</div>
+
+  <details open>
+    <summary>Score Interpretation</summary>
+    <p class="explanation">
+      <strong>Go (≥67%):</strong> High potential for AI automation.<br>
+      <strong>Wait (33–66%):</strong> Moderate potential – needs more analysis or risk control.<br>
+      <strong>No-Go (<33%):</strong> Low potential – significant technical or compliance barriers.<br><br>
+      Risk scores are inverted (higher risk = lower potential).<br>
+      <em>Current Score: 54/90 = 60.0%</em>
+    </p>
+  </details>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Epic</th>
+        <th>Total Score</th>
+        <th>Classification</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>Ethical AI Strategy Development</td>
+          <td>18/30 (60.0%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 7</div>
+              <div class="subscore">Data Requirements: 8 – Current trends show an increasing volume of data being collected across sectors, yet accessible datasets for ethical AI compliance are often fragmented and inconsistent. Thus, while there is substantial data potential, its quality and alignment with ethical standards are variable.</div>
+              <div class="subscore">Decision Complexity: 6 – The decision-making processes involved in ethical AI span both structured guidelines and subjective judgments, making full automation challenging. This complexity can reduce automation effectiveness but also opens opportunities for nuanced AI applications.</div>
+              <div class="subscore">Integration: 5 – Integrating ethical guidelines into existing AI systems presents moderate challenges due to varying compliance requirements and potential friction between current software capabilities and new regulations.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 9</div>
+              <div class="subscore">Repetition / Volume: 4 – The volume of compliance checks may be low compared to operational tasks, but the criticality of ethical considerations in AI can drive forward high-value consultancy services.</div>
+              <div class="subscore">Pattern Recognition: 8 – There is a significant opportunity to identify patterns of ethical compliance or lack thereof within datasets, creating potential for actionable insights that could significantly improve compliance frameworks.</div>
+              <div class="subscore">Scalability: 7 – This framework can be implemented across various industries seeking ethical AI guidance, though differences in industry regulations might slow widespread adoption.</div>
+              <div class="subscore">Error Tolerance: 9 – Given the sensitive nature of ethical AI, even minor errors in compliance could lead to significant reputational damage and regulatory repercussions, emphasizing the need for precision.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 2 (original: 8)</div>
+              <div class="subscore">Bias Risk: 7 – There is inherent bias risk in AI systems, especially in underrepresented demographics. Awareness and management of these biases are crucial for deploying ethical frameworks, yet tackling this remains a complex challenge.</div>
+              <div class="subscore">Regulatory: 9 – Regulatory frameworks such as GDPR and various AI fairness laws present stringent requirements that add complexity to compliance efforts, making it both a challenge and a significant driver for demand for consultancy.</div>
+              <div class="subscore">Explainability: 8 – Explanatory transparency is vital for stakeholders in establishing trust in AI systems. As such, meeting explainability requirements will dictate model choices and complexity of deployment.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>Compliance Auditing Services</td>
+          <td>17/30 (56.7%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 6</div>
+              <div class="subscore">Data Requirements: 5 – The initiative requires access to various data sources, including operational logs and compliance checklists, which may not always be available in a structured format. However, many businesses have started maintaining compliance records, offering a moderate level of data availability.</div>
+              <div class="subscore">Decision Complexity: 7 – Compliance auditing involves multiple structured decisions based on defined regulations, which lend themselves to automation. However, subjective interpretations of compliance guidelines may complicate automation efforts.</div>
+              <div class="subscore">Integration: 6 – Compliance auditing tools need to interface with existing IT systems for data collection, which can vary in complexity. Existing systems may provide APIs, but legacy systems could create integration challenges.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 7 – Compliance audits often involve repetitive tasks such as document review and checklist verification, which can be automated effectively. The volume is substantial, especially in highly regulated industries.</div>
+              <div class="subscore">Pattern Recognition: 8 – There's a strong opportunity to leverage AI for identifying compliance patterns from data, which can prevent violations preemptively and drive business value through risk mitigation.</div>
+              <div class="subscore">Scalability: 9 – This framework can be scaled across various departments within an organization and even adapted for different industries, allowing for high scalability if designed properly.</div>
+              <div class="subscore">Error Tolerance: 4 – Errors in compliance auditing can lead to significant legal and financial repercussions, resulting in a low error tolerance. This necessitates rigorous checks which can limit automation potential.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 3 (original: 7)</div>
+              <div class="subscore">Bias Risk: 6 – Bias can arise in compliance checks if underrepresented groups are not adequately considered in data sets. Developing methods to ensure fair assessments is crucial but presents challenges in model training.</div>
+              <div class="subscore">Regulatory: 8 – This initiative must navigate a complex regulatory landscape, including GDPR and AI ethics regulations. Although this poses challenges, it also aligns with increasing demand for ethical practices.</div>
+              <div class="subscore">Explainability: 8 – Stakeholders require high levels of transparency to understand AI decision-making processes in compliance auditing. This drives the choice of methods that aid explainability, affecting overall system design.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>Client Engagement and Education</td>
+          <td>19/30 (63.3%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 7</div>
+              <div class="subscore">Data Requirements: 6 – There is a growing availability of data around user interactions and client feedback, however, the quality of this data may vary significantly across different demographics and industries.</div>
+              <div class="subscore">Decision Complexity: 5 – The decisions within this framework range from structured regulatory compliance checks to subjective assessments of trust, leading to moderate complexity in automating these processes.</div>
+              <div class="subscore">Integration: 8 – Integrating with existing CRM systems or customer service platforms is generally feasible due to available APIs, but custom configurations may be required to tailor it effectively.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 5 – While client engagement can involve repetitive tasks, such as sending reminders or collecting feedback, the variability in client interactions leads to moderate automation potential.</div>
+              <div class="subscore">Pattern Recognition: 9 – The ability to analyze patterns in client behavior can yield actionable insights, making AI very valuable in enhancing user experiences and building trust.</div>
+              <div class="subscore">Scalability: 7 – The framework can scale effectively across client engagements, though it may require tailored adaptations for different sectors or regulatory environments, which may limit uniform rollout.</div>
+              <div class="subscore">Error Tolerance: 4 – Errors in engagement communications could erode trust, making this domain particularly sensitive to inaccuracies, thus indicating lower tolerance for mistakes.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 4 (original: 6)</div>
+              <div class="subscore">Bias Risk: 5 – There is potential for bias in AI models that could lead to unequal representations in client engagement strategies; employing diverse datasets is critical but challenging.</div>
+              <div class="subscore">Regulatory: 7 – With regulations around AI use tightening, especially regarding data privacy and ethical standards, compliance will impose additional scrutiny on framework development but is manageable.</div>
+              <div class="subscore">Explainability: 8 – Clients expect transparency in AI processes, especially when it comes to compliance and trust; hence, ensuring explainability will be a key requirement impacting model selection.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">Generated 10/23/2025, 3:02:21 AM</div>
+</div>
+</body>
+</html>
