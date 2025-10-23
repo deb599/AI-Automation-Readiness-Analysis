@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Automation Assessment</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f1f5f9; padding: 40px; color: #1e293b; }
+  .container { max-width: 1200px; margin: auto; background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .header { background: #2563eb; color: white; padding: 20px; text-align: center; border-radius: 12px; }
+  .verdict { background: #f59e0b; color: white; padding: 20px; text-align: center; border-radius: 12px; margin: 20px 0; font-weight: bold; font-size: 24px; }
+  .mvpGoal { font-style: italic; margin-bottom: 10px; color: white; font-weight: bold; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #e2e8f0; padding: 8px 12px; text-align: center; vertical-align: top; }
+  th { background: #f1f5f9; }
+  .explanation { text-align: left; }
+  details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; padding: 10px; }
+  summary { font-weight: bold; cursor: pointer; }
+  .subscore { margin-left: 15px; margin-bottom: 5px; }
+  .small-note { font-size: 12px; font-style: italic; color: #64748b; margin-top: 5px; }
+  .footer { text-align: center; font-size: 13px; color: #93c5fd; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AI Automation Assessment</h1>
+    <p>3 Epics | Total: 52/90 (57.8%)</p>
+    <div class="mvpGoal">MVP Goal: Enhance robot decision-making by utilizing collaborative filtering techniques to improve performance in novel scenarios.</div>
+  </div>
+
+  <div class="verdict">Wait – 57.8%</div>
+
+  <details open>
+    <summary>Score Interpretation</summary>
+    <p class="explanation">
+      <strong>Go (≥67%):</strong> High potential for AI automation.<br>
+      <strong>Wait (33–66%):</strong> Moderate potential – needs more analysis or risk control.<br>
+      <strong>No-Go (<33%):</strong> Low potential – significant technical or compliance barriers.<br><br>
+      Risk scores are inverted (higher risk = lower potential).<br>
+      <em>Current Score: 52/90 = 57.8%</em>
+    </p>
+  </details>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Epic</th>
+        <th>Total Score</th>
+        <th>Classification</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>Data Aggregation from Community Sources</td>
+          <td>17/30 (56.7%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 6</div>
+              <div class="subscore">Data Requirements: 5 – The success of collaborative filtering heavily depends on the availability of diverse, high-quality data from community sources. This may be challenging to obtain, especially regarding data consistency and completeness.</div>
+              <div class="subscore">Decision Complexity: 7 – Implementing collaborative filtering in a robotic context requires analyzing structured data from multiple sources. While subjective decisions could be generated, ensuring accuracy in real-time situations adds a layer of complexity.</div>
+              <div class="subscore">Integration: 6 – Integrating community-sourced data into existing robotic systems poses challenges, particularly regarding compatibility with legacy systems and ensuring real-time data flow without significant delays.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 7 – The potential for automating high-volume decision-making tasks is significant, particularly in environments where robots frequently encounter similar scenarios. However, variability in task complexity can limit this.</div>
+              <div class="subscore">Pattern Recognition: 9 – Collaborative filtering can excel in identifying user preferences and behavior patterns, delivering actionable insights that can significantly enhance robotic performance in novel situations.</div>
+              <div class="subscore">Scalability: 8 – If effective, the tools and models developed can be scaled across multiple robotic platforms and applications, but achieving this will rely heavily on widespread data sharing.</div>
+              <div class="subscore">Error Tolerance: 5 – While some applications may tolerate errors, in safety-critical environments (e.g., vehicles), the consequences can be severe, making robust error management essential.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 3 (original: 7)</div>
+              <div class="subscore">Bias Risk: 6 – Bias can arise from the data used for collaborative filtering, especially if certain community groups are underrepresented. Mitigating bias in model training will be a significant hurdle.</div>
+              <div class="subscore">Regulatory: 8 – Regulatory frameworks around AI are evolving, and compliance with laws such as GDPR will require careful handling of user data, particularly in collaborative environments.</div>
+              <div class="subscore">Explainability: 7 – Robotic applications in sensitive domains necessitate high levels of explainability; stakeholders must understand decision-making processes, influencing the choice of algorithms.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>Collaborative Filtering Algorithm Development</td>
+          <td>16/30 (53.3%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 6</div>
+              <div class="subscore">Data Requirements: 5 – The successful implementation requires high-quality community-sourced data, which may not always be readily available. Challenges in data uniformity and accuracy might hinder effective training.</div>
+              <div class="subscore">Decision Complexity: 7 – The epic involves automated decision-making that can range from straightforward assessments to complex, context-sensitive choices. This variability necessitates robust AI modeling to manage decision complexity.</div>
+              <div class="subscore">Integration: 7 – Integrating with existing AI systems poses some friction; however, many robotic systems already utilize data-driven decision processes, which can facilitate integration with the right interfaces.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 6 – The solution targets scenarios with variable repetition, but many decision-making tasks are irregular. The potential to automate certain recurring decisions exists but is conditioned on data availability.</div>
+              <div class="subscore">Pattern Recognition: 8 – The collaborative filtering approach has high potential for recognizing patterns from diverse datasets, which could greatly enhance operational insights and improve decision-making accuracy.</div>
+              <div class="subscore">Scalability: 9 – Once proven effective, this algorithm could easily scale across various robotic systems and applications. However, the need for continuous data validation could impose limitations.</div>
+              <div class="subscore">Error Tolerance: 5 – While some errors can be tolerated in low-stakes environments, decisions made in critical contexts (e.g., medical robots, autonomous vehicles) demand a high standard of reliability, which adds pressure on system accuracy.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 2 (original: 8)</div>
+              <div class="subscore">Bias Risk: 7 – The collaborative nature of the data introduces risks of algorithmic bias, particularly if certain user groups are over- or under-represented in the data. Mitigating these biases requires careful consideration and explicit testing.</div>
+              <div class="subscore">Regulatory: 7 – With regulations on AI, like GDPR and related ethical guidelines, compliance measures will have to be strictly adhered to; the complexity of deploying AI in decision-making environments heightens the importance of ensuring regulatory alignment.</div>
+              <div class="subscore">Explainability: 8 – Stakeholders, especially in safety-critical applications, will demand a clear understanding of decision-making processes. This requirement for explainability can complicate model design and implementation.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td>Performance Evaluation and Feedback Loop</td>
+          <td>19/30 (63.3%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 6</div>
+              <div class="subscore">Data Requirements: 5 – While large volumes of community-sourced data can be beneficial, the current limitations in data quality and types present significant challenges. Robust datasets with high variability in scenarios are crucial to train the models effectively.</div>
+              <div class="subscore">Decision Complexity: 7 – Collaborative filtering allows for subjective decision-making which can adapt based on user preferences, enhancing automation potential. However, the complexity of these decisions may require careful model tuning and evaluation.</div>
+              <div class="subscore">Integration: 5 – Integrating this solution into existing robotic systems may encounter friction due to varying compliance standards across systems and the current architecture's rigidity.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 9 – Utilizing collaborative filtering can significantly enhance decisions over repetitive tasks in logistics or delivery systems, providing clear automation potential. The high frequency of such decisions implies a strong business case.</div>
+              <div class="subscore">Pattern Recognition: 8 – This approach is capable of recognizing user behaviors and environmental patterns which can lead to insightful operational efficiencies and improvements. Real-world applications suggest enhanced responses to dynamic situations.</div>
+              <div class="subscore">Scalability: 7 – Once integrated, scaling collaborative filtering across various robotic systems is feasible; however, variations in team structures and objectives may impose constraints.</div>
+              <div class="subscore">Error Tolerance: 6 – Errors in decision-making can lead to adverse outcomes in high-stakes environments, particularly in autonomous systems. Thus, implementing robust quality controls and fail-safe measures will be critical.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 5 (original: 5)</div>
+              <div class="subscore">Bias Risk: 4 – Collaborative filtering may inadvertently amplify biases present in community-sourced data, risking the quality of decision-making for underrepresented groups. Identifying and mitigating these biases will be a key challenge.</div>
+              <div class="subscore">Regulatory: 6 – Navigating regulatory frameworks like GDPR and AI fairness laws is essential, as they can impact data sourcing and privacy significantly. However, the technology can be designed to comply with regulations from the outset.</div>
+              <div class="subscore">Explainability: 6 – As decision-making becomes more algorithm-driven, the need for explainability increases among stakeholders. Ensuring transparency in collaborative filtering processes will impact model effectiveness and trust.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">Generated 10/23/2025, 5:49:27 AM</div>
+</div>
+</body>
+</html>
