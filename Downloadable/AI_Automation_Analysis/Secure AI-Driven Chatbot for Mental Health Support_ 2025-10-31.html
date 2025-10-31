@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<idea>AI Automation Assessment</idea>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f1f5f9; padding: 40px; color: #1e293b; }
+  .container { max-width: 1200px; margin: auto; background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .header { background: #2563eb; color: white; padding: 20px; text-align: center; border-radius: 12px; }
+  .verdict { background: #f59e0b; color: white; padding: 20px; text-align: center; border-radius: 12px; margin: 20px 0; font-weight: bold; font-size: 24px; }
+  .mvpGoal { font-style: italic; margin-bottom: 10px; color: white; font-weight: bold; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #e2e8f0; padding: 8px 12px; text-align: center; vertical-align: top; }
+  th { background: #f1f5f9; }
+  .explanation { text-align: left; }
+  details { margin-top: 10px; background: #f1f5f9; border-radius: 8px; padding: 10px; }
+  summary { font-weight: bold; cursor: pointer; }
+  .subscore { margin-left: 15px; margin-bottom: 5px; }
+  .small-note { font-size: 12px; font-style: italic; color: #64748b; margin-top: 5px; }
+  .footer { text-align: center; font-size: 13px; color: #93c5fd; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>AI Automation Assessment</h1>
+    <p>3 Epics | Total: 52/90 (57.8%)</p>
+    <div class="mvpGoal">MVP Goal: Develop a secure AI-driven chatbot that provides personalized mental health support while ensuring user data privacy through end-to-end encryption.</div>
+  </div>
+
+  <div class="verdict">Wait – 57.8%</div>
+
+  <details open>
+    <summary>Score Interpretation</summary>
+    <p class="explanation">
+      <strong>Go (≥67%):</strong> High potential for AI automation.<br>
+      <strong>Wait (33–66%):</strong> Moderate potential – needs more analysis or risk control.<br>
+      <strong>No-Go (<33%):</strong> Low potential – significant technical or compliance barriers.<br><br>
+      Risk scores are inverted (higher risk = lower potential).<br>
+      <em>Current Score: 52/90 = 57.8%</em>
+    </p>
+  </details>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Epic</th>
+        <th>Total Score</th>
+        <th>Classification</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td></td>
+          <td>17/30 (56.7%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 6</div>
+              <div class="subscore">Data Requirements: 5 – Collecting patient data for personalized interactions requires comprehensive onboarding processes and validated sources to ensure data accuracy and security, which can be challenging but is feasible with existing frameworks.</div>
+              <div class="subscore">Decision Complexity: 7 – While decisions regarding mental health can be subjective, utilizing AI to guide responses based on user input can streamline workflows; however, challenges arise in ensuring nuanced understanding and appropriate responses.</div>
+              <div class="subscore">Integration: 6 – Integrating the chatbot with existing mental health systems could face technical issues due to diverse platforms and data formats, but existing APIs and frameworks can facilitate smoother integration.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 7 – The potential for high-volume interactions makes this angle commercially viable; however, continuously evolving user needs mean the chatbot must adapt to maintain relevance.</div>
+              <div class="subscore">Pattern Recognition: 8 – The ability to analyze user inputs and mental health trends offers substantial insights that could enhance user outcomes, bolstering the application’s value.</div>
+              <div class="subscore">Scalability: 9 – Once developed, the chatbot can be easily scaled to a wide user base, providing a significant advantage; nevertheless, initial deployment may require extensive testing and monitoring for quality assurance.</div>
+              <div class="subscore">Error Tolerance: 5 – Given the sensitive nature of mental health, any errors carry significant risks; thus, the system must incorporate robust safeguards to mitigate potential harm.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 3 (original: 7)</div>
+              <div class="subscore">Bias Risk: 6 – As AI systems can inadvertently perpetuate biases, careful training and diverse data sources will be necessary to ensure equitable treatment, which presents a unique challenge in mental health contexts.</div>
+              <div class="subscore">Regulatory: 8 – The regulatory landscape for mental health and data security is stringent, particularly under laws such as GDPR; navigating these regulations will be crucial to avoid legal complications.</div>
+              <div class="subscore">Explainability: 7 – Mental health professionals require a clear understanding of AI decision-making processes to use the outputs effectively and ethically, which adds complexity to model training and validation.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td></td>
+          <td>17/30 (56.7%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 6</div>
+              <div class="subscore">Data Requirements: 5 – Access to high-quality, anonymized mental health data is crucial, but such datasets are often limited and must be sourced from reliable providers while ensuring user consent.</div>
+              <div class="subscore">Decision Complexity: 6 – While some decisions may be straightforward (e.g., responses to common queries), the complexities of addressing nuanced mental health issues can lead to high variability in decision-making.</div>
+              <div class="subscore">Integration: 7 – Integration with existing mental health systems is viable, but significant customization may be required to align with varied data formats and system architectures.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 8</div>
+              <div class="subscore">Repetition / Volume: 5 – The potential for automation exists in responding to frequently asked mental health questions; however, the complexity of human emotion can limit full automation.</div>
+              <div class="subscore">Pattern Recognition: 7 – The system can utilize historical interaction data to identify trends and support interventions, enhancing its efficacy and user engagement.</div>
+              <div class="subscore">Scalability: 8 – The chatbot can potentially reach a large user base rapidly, but challenges in maintaining personalized engagement for diverse users may hinder optimal scalability.</div>
+              <div class="subscore">Error Tolerance: 4 – Given the sensitive nature of mental health support, errors could have severe implications; thus, an error tolerance level needs to be very low.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 3 (original: 7)</div>
+              <div class="subscore">Bias Risk: 6 – Bias in training data could lead to skewed support outcomes, especially for underrepresented groups; ongoing monitoring and diverse datasets must be prioritized.</div>
+              <div class="subscore">Regulatory: 8 – Strict regulatory frameworks (like GDPR) govern mental health data, impacting product development timelines and necessitating rigorous compliance measures.</div>
+              <div class="subscore">Explainability: 5 – Stakeholders, including users and healthcare providers, require transparency regarding chatbot decision-making; this need for explainability complicates AI model selection.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr><tr>
+          <td></td>
+          <td>18/30 (60.0%)</td>
+          <td>Moderate Potential</td>
+          <td class="explanation">
+            <details>
+              <summary>View Breakdown</summary>
+
+              <div class="subscore"><strong>Technical Feasibility:</strong> 7</div>
+              <div class="subscore">Data Requirements: 8 – There is a wealth of diverse data needed to train natural language processing systems; however, high-quality labeled data specifically for mental health contexts may be scarce.</div>
+              <div class="subscore">Decision Complexity: 6 – While many decisions can be automated, the subjective nature of mental health queries complicates final outputs, requiring careful tuning and human oversight.</div>
+              <div class="subscore">Integration: 5 – Integrating with existing healthcare systems must ensure data security, posing challenges that could delay deployment, but APIs for data transfer exist.</div>
+
+              <div class="subscore"><strong>Business Value:</strong> 9</div>
+              <div class="subscore">Repetition / Volume: 7 – The chatbot can handle repetitive inquiries and FAQs at scale, providing frequent user interactions that justify investment and maintain user engagement.</div>
+              <div class="subscore">Pattern Recognition: 9 – There is high potential to detect patterns in user behavior and language, leading to derived insights that can drive personalized experiences.</div>
+              <div class="subscore">Scalability: 8 – The chatbot has excellent scalability across user bases; however, expanding to new regions may require tweaking for cultural sensitivities.</div>
+              <div class="subscore">Error Tolerance: 4 – Errors in mental health advice can lead to serious consequences, necessitating a high level of accuracy which impacts operational freedom.</div>
+
+              <div class="subscore"><strong>Risk (Inverted):</strong> 2 (original: 8)</div>
+              <div class="subscore">Bias Risk: 7 – The AI may unintentionally reinforce biases present in training data, particularly if data sources lack diversity, which is critical in mental health applications.</div>
+              <div class="subscore">Regulatory: 9 – Strict regulations such as GDPR and mental health data laws significantly influence design and operations, imposing challenges but also creating trust if met.</div>
+              <div class="subscore">Explainability: 6 – Explainability is essential for user trust and for compliance with regulations; however, the complexity of mental health applications complicates achieving this.</div>
+
+              <div class="small-note"> Note: Each score is on a 0–10 scale. Category totals are averages of sub-categories (also 0–10).</div>
+            </details>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">Generated 10/31/2025, 3:49:59 PM</div>
+</div>
+</body>
+</html>
