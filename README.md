@@ -223,35 +223,17 @@ High Risk Score (e.g., 8/10) = High Compliance Barriers
 
 ## 📁 **Viewing HTML Reports**
 
-### **Option 1: Direct GitHub Raw View**
 
 **⚠️ GitHub blocks direct HTML rendering for security. Use these methods instead:**
 
-### **Option 2: GitHub Pages (Recommended)**
-
-1. Navigate to: `https://github.com/deb599/BA-co-pilot/tree/main/Downloadable/AI_Automation_Analysis`
-2. Click any `.html` file
-3. Click **"Raw"** button to get raw URL
-4. Visit: `https://htmlpreview.github.io/?` + `[raw GitHub URL]`
-
-**Example:**
-```
-https://raw.githubusercontent.com/deb599/BA-co-pilot/main/Downloadable/AI_Automation_Analysis/
-
-```
-
-### **Option 3: Local Download**
+### **Local Download**
 
 1. Navigate to the HTML file on GitHub
 2. Click **"Download raw file"** button
 3. Open with any web browser (Chrome, Firefox, Safari, Edge)
 4. Fully interactive with collapsible sections
 
-### **Option 4: Chrome Extension**
 
-Install: [GitHub HTML Preview](https://chrome.google.com/webstore/detail/github-html-preview/cphnnfjainnhgejcpgboeeakfkgbkfek)
-- Automatically renders HTML files on GitHub
-- No manual URL editing needed
 
 ---
 
