@@ -236,9 +236,8 @@ High Risk Score (e.g., 8/10) = High Compliance Barriers
 
 **Example:**
 ```
-Raw URL: https://raw.githubusercontent.com/deb599/BA-co-pilot/main/Downloadable/AI_Automation_Analysis/Score_and_prioritize_sales_leads_based_on_likelihood_to_convert_20251023-131235.html
+https://raw.githubusercontent.com/deb599/BA-co-pilot/main/Downloadable/AI_Automation_Analysis/
 
-Preview URL: https://htmlpreview.github.io/?https://raw.githubusercontent.com/deb599/BA-co-pilot/main/Downloadable/AI_Automation_Analysis/Score_and_prioritize_sales_leads_based_on_likelihood_to_convert_20251023-131235.html
 ```
 
 ### **Option 3: Local Download**
